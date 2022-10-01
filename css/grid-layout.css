@@ -1,11 +1,11 @@
 .grid-content {
     display:grid;
     grid-template-columns: auto auto auto;
-    background-color: darkblue;
+    background-color: blue;
     padding: 10px;
     column-gap: 10px;
 }
-grid-content>div {
+.grid-content>div {
 row-gap: 10px;
 padding: 20px;
 font-size: 30px;
