@@ -1,12 +1,14 @@
-.grid-content {
+.grid-content{
     display:grid;
     grid-template-columns: auto auto auto;
     background-color: blue;
     padding: 10px;
     column-gap: 10px;
+    row-gap: 10px;
 }
-.grid-content>div {
-row-gap: 10px;
+
+.grid-content >div {
+margin: 10px;
 padding: 20px;
 font-size: 30px;
 text-align: center;
@@ -14,8 +16,23 @@ background-color: cornflowerblue;
 border-radius: 15px 25px;
 
 }
-.item1 {
+.header {
     grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5
+}
+.header nav ul {
+    list-style:none;
+}
+ .header nav ul > li {
+float:left;
+margin:10px;
+ }
+    
+
+.item1 {
+    grid-row-start: 2;
     grid-row-end: 4;
     grid-column-start: 1;
     grid-column-end: 3;
