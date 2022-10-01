@@ -1,51 +1,88 @@
-.grid-content{
-    display:grid;
-    grid-template-columns: auto auto auto;
-    background-color: blue;
-    padding: 10px;
-    column-gap: 10px;
-    row-gap: 10px;
-}
 
-.grid-content >div {
-margin: 10px;
-padding: 20px;
-font-size: 30px;
-text-align: center;
-background-color: cornflowerblue;
-border-radius: 15px 25px;
-
-}
-.header {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 5
-}
-.header nav ul {
-    list-style:none;
-}
- .header nav ul > li {
-float:left;
-margin:10px;
- }
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
     
+a:link {
+        color: white;
+        background-color: transparent;
+        text-decoration:dotted;
+    }
 
+    a:hover {
+        color: rgb(120, 22, 211);
+        text-decoration: underline;
+    }
+    
+.grid-content{
+        display:grid;
+        grid-template-columns: auto auto auto;
+        background-color: rgb(66, 13, 97);
+        padding: 10px;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    .menu {
+        position: relative;
+        height: 100px;
+    }
+    
+    .menu nav {
+    position: absolute;
+        top: 145px;
+        left: 100px;
+    }
+
+    
+.grid-content >div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(201, 243, 240);
+    border-radius: 15px 25px;
+    }
+    
+    
+.header {
+        background-image: url('../css/images/space.jpg');
+        background-repeat: repeat;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    .header nav ul > ul{
+float:left;
+margin:5px;
+}
+
+.header nav ul>li>a {
+    text-decoration: none;
+    color: white;
+    text-shadow: rgb(149, 72, 221) 10px 10px 10px;
+}
+
+    
+   
 .item1 {
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
 }
+
 .item2 {
-grid-column-start:3;
-grid-column-end: 5;
-}
-.item3 {
-    grid-column-start: 3;
+    grid-column-start:3;
     grid-column-end: 5;
-}
-.item4 {
-    grid-column-start: 1;
-    grid-column-end: 5;
-}
+    }
+    .item3 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    .item4 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    
