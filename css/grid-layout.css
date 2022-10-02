@@ -1,7 +1,7 @@
 
 body {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-    }
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
     
 a:link {
         color: white;
@@ -10,14 +10,14 @@ a:link {
     }
 
     a:hover {
-        color: rgb(120, 22, 211);
+        color: rgb(82, 8, 151);
         text-decoration: underline;
     }
     
 .grid-content{
         display:grid;
         grid-template-columns: auto auto auto;
-        background-color: rgb(66, 13, 97);
+        background-color: rgb(10, 2, 15);
         padding: 10px;
         column-gap: 10px;
         row-gap: 10px;
@@ -58,10 +58,10 @@ float:left;
 margin:5px;
 }
 
-.header nav ul>li>a {
+h1,h2,h3,h4 {
     text-decoration: none;
-    color: white;
-    text-shadow: rgb(149, 72, 221) 10px 10px 10px;
+    color: rgb(10, 6, 6);
+    text-shadow: rgb(140, 134, 230) 3px 5px 12px;
 }
 
     
